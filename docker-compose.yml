@@ -44,7 +44,7 @@ services:
   alertmanager-bot:
     image: serg3091/prometheus_bot:v0.0.1
     volumes:
-      - ./configs/alertmanager-bot/config.yaml:/config.yaml
+      - ./configs/alertmanager-bot/config.yaml:/config.yml
       - ./configs/alertmanager-bot/template.tmpl:/template.tmpl
     restart: unless-stopped
 
